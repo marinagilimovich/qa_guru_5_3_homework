@@ -15,8 +15,8 @@ public class CheckSoftAssertionsPageOnGitHub {
     void findSelenideOnGitHub() {
         open("https://github.com/");
         $("[name='q']").setValue("selenide").pressEnter();
-        $(byAttribute("href","/selenide/selenide")).click();
-        $(byAttribute("data-tab-item","i4wiki-tab")).click();
+        $(byAttribute("href", "/selenide/selenide")).click();
+        $(byAttribute("data-tab-item", "i4wiki-tab")).click();
         $(byText("Soft assertions")).click();
         $("#wiki-body").shouldHave(text("Using JUnit5 extend test class:"));
     }
