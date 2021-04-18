@@ -14,5 +14,6 @@ public class CheckDragAndDropElements {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").dragAndDropTo("#column-b");
         $("#columns").shouldHave(text("B\n" + "A"));
+
     }
 }
